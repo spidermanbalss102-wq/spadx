@@ -1,0 +1,51 @@
+SpadeX - Cloudflare Pages /index.html edition
+Created by JesusA_777
+
+DEPLOY TO YOUR EXISTING CLOUDFLARE PAGES WEBSITE
+
+1. Open Cloudflare, select Workers & Pages, and open your Pages project:
+   spade1html.
+2. Create a new production deployment. Upload this whole ZIP, or extract it
+   and upload the whole extracted folder. Keep index.html, _worker.js,
+   _routes.json, and assets together at the top level.
+3. Deploy, then visit https://spade1html.pages.dev/index.html
+
+The included _worker.js uses Cloudflare Pages advanced mode to serve the
+homepage at /index.html while keeping that path visible. Visiting / redirects
+to /index.html and preserves query parameters. Assets retain their paths.
+Keep _worker.js and _routes.json in subsequent deployments for this behavior.
+This package is specifically for Cloudflare Pages.
+
+Changing the page path does not change the domain. It does not guarantee
+access on a school or other filtered network. A domain-level block can still
+apply even when /index.html appears in the address.
+
+Cloudflare supports _worker.js with dashboard drag-and-drop uploads:
+https://developers.cloudflare.com/pages/get-started/direct-upload/#functions
+https://developers.cloudflare.com/pages/functions/advanced-mode/
+
+These files do not require ChatGPT sign-in. Public access is controlled by
+the web hosting service you choose; set that website to public.
+
+No build step or package installation is needed for hosting these files.
+Keep the filenames and folder structure unchanged. The assets folder,
+JavaScript files, fonts, and WebAssembly file must all be uploaded.
+
+Host at the root of your website address, such as https://your-domain.example/,
+rather than inside a subfolder. HTTPS is required for the browsing features.
+Opening index.html directly from your computer will not run the full app.
+
+FEATURE AVAILABILITY
+
+The download contains the SpadeX frontend. Browsing, games, AI, and music rely
+on external providers and remain subject to their availability and access
+rules. Their server infrastructure is not included in this package. Account
+sign-in and payments are disabled until you connect your own services.
+
+The SpadeX branding, spade icon, and Created by JesusA_777 credit are included.
+The original advertising and Google Analytics components have been removed.
+
+The starting frontend was provided at:
+https://storage.googleapis.com/studyk12/index.html
+Third-party components retain their applicable licenses. The creator credit
+identifies this customized SpadeX edition.
